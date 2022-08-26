@@ -14,4 +14,5 @@ Beyond fine-grained control, the ability to prune-out high-frequencies is benefi
 
 ![paper2](paper2_img.png)
 
-In the scheme of simply increasing accuracy without destroying information, however, FCNNs have both the fine-grained advantage which CNNs do not. Having learnable spectral filter passes is an interesting next step.
+<!-- In the scheme of simply increasing accuracy without destroying information, however, FCNNs have both the fine-grained advantage which CNNs do not. Having learnable spectral filter passes is an interesting next step.
+ -->
