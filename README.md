@@ -3,7 +3,7 @@ This is my Tensorflow implementation of https://arxiv.org/abs/1506.03767.
 
 ![what?!](title_summary.png)
 #### My Synopsis
-There are 2 highlighted issues in the current invariancy scheme found in convolutional networks.
+There are 2 issues I seek to highlight in the current invariancy scheme found in convolutional networks.
 
 The paper which I implement explains the first such issue. Max pooling as an op. is too course an operation for dimensionality reduction and invariancy. Specifically, the range of potential 2D max pooling operations is very sparse, meaning that one can only learn so many max poolings when in actually some inbetween value is more suitable for the application at hand. Spectral pooling side-steps that issue due to allowing for a much more finely-grained pooling op. without sacrificing on many of the pros of conventional pooling. These layers are globally and locally high-frequency (or arbitrarily defined) invariant.
 
