@@ -16,3 +16,6 @@ Beyond fine-grained control, the ability to prune-out high-frequencies is benefi
 
 <!-- In the scheme of simply increasing accuracy without destroying information, however, FCNNs have both the fine-grained advantage which CNNs do not. Having learnable spectral filter passes is an interesting next step.
  -->
+
+### Preferred additions
+Fourier transforms are useful in the sense of making local features globally considered, as well as defense against adversarial attack and fine-grained tuning. There is an issue however with signal sampling rates and noise found only locally. If some artifact is present in only some part of the image; fourier transforms are quite inefficient and poorly suited for use in pooling application. Wavelets are superior in being changeable in time (or instantaneous signal location), therefore providing a better way to both protect against adversarial attack and do fine-grained tuning without the drawback of not being able to deal with local features directly as with fourier transforms. Changing the fouriers to wavelets should produce something superior. Although wavelets aren't implemented directly in TensorFlow, they are in NumPy and further made elsewhere for usage: https://github.com/fversaci/WaveTF.
